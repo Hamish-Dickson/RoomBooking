@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="598.0" styleClass="anchor-pane" stylesheets="@css/manageStyle.css"
+            xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ClientModule.ManageScreenController">
+    <children>
+        <Label layoutX="223.0" layoutY="7.0" text="Manage Accounts" styleClass="manageTitle">
+            <font>
+                <Font name="Agency FB" size="28.0" />
+            </font>
+        </Label>
+        <TabPane layoutY="48.0" prefHeight="553.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Add User">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="userNameField" layoutX="225.0" layoutY="50.0">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="firstNameField" layoutX="225.0" layoutY="97.0">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="lastNameField" layoutX="225.0" layoutY="144.0">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </TextField>
+                                <Label layoutX="155.0" layoutY="57.0" text="Username:">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Label>
+                                <Label layoutX="152.0" layoutY="104.0" text="First name:">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Label>
+                                <Label layoutX="153.0" layoutY="151.0" text="Last name:">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Label>
+                                <Label layoutX="156.0" layoutY="203.0" text="Password:">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Label>
+                                <Label layoutX="176.0" layoutY="256.0" text="Admin?">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Label>
+                                <ComboBox fx:id="cbAdmin" layoutX="225.0" layoutY="249.0" prefWidth="150.0"/>
+                                <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="196.0"/>
+                                <Button layoutX="224.0" layoutY="327.0" mnemonicParsing="false" onAction="#addUser"
+                                        prefHeight="46.0" prefWidth="153.0" text="Add User">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Delete User">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="deleteUsernameField" layoutX="225.0" layoutY="166.0"/>
+                                <Label layoutX="160.0" layoutY="173.0" text="Username:"/>
+                                <Button layoutX="223.0" layoutY="226.0" mnemonicParsing="false" onAction="#deleteUser"
+                                        prefHeight="46.0" prefWidth="153.0" text="Delete User">
+                                    <font>
+                                        <Font name="Agency FB" size="19.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

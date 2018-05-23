@@ -1,0 +1,67 @@
+.button {
+    -fx-background-color: #b9b9b9;
+    -fx-text-fill: #2b2b35;
+}
+
+.anchor-pane {
+    -fx-background-color: #2b2b35;
+}
+
+.label {
+    -fx-text-fill: #b9b9b9;
+    -fx-font: 19px 'Agency FB';
+}
+
+.password-field, .text-field, .combo-box {
+    -fx-background-color: #b9b9b9;
+    -fx-text-fill: #2b2b35;
+    -fx-font: 19px 'Agency FB';
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #2b2b35;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab,
+.tab-pane > .tab-header-area > .headers-region > .tab:selected,
+.tab-pane > .tab-header-area > .headers-region > .tab:hover,
+.tab-pane > .tab-header-area > .headers-region > .tab:focused {
+    -fx-font: 19px 'Agency FB';
+    -fx-background-color: #b9b9b9;
+    -fx-text-fill: #2b2b35;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 1;
+    -fx-background-radius: 0;
+    -fx-border-color: #2b2b35;
+    -fx-animated: false;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+    -fx-text-alignment: center;
+    -fx-spacing: 20px;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.combo-box-popup > .list-view {
+    -fx-background-color: #b9b9b9;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-background-color: #b9b9b9;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:hover {
+    -fx-background-color: #2c3cff;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected {
+    -fx-text-fill: #96342f;
+}
+
+.manageTitle {
+    -fx-font: 28px 'Agency FB';
+}
